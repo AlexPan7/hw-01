@@ -1,0 +1,64 @@
+@import '../../../assets/styles/mixin';
+
+.postItem {
+  font-size: 0.75rem;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.image {
+  border-radius: 0.625rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #000000 100%);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 0.625rem;
+  }
+}
+
+.descr {
+  margin-top: -2rem;
+  position: relative;
+  z-index: 2;
+  padding: 0 1.25rem;
+  font-size: 0.8125rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 0.9;
+  margin: 0 0 1rem;
+  @include media('widescreen') {
+    font-size: 3.125rem;
+  }
+}
+
+.badge {
+  float: right;
+  border-radius: 10px 0 0 0;
+  background: #000;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 10px 0 0 10px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 -1.25rem 0 0.2rem;
+}
