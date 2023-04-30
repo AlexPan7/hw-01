@@ -1,8 +1,10 @@
 import styles from './NavList.module.scss';
 
 const NavList = ({ isOpen, children }) => {
+  const {navList, navOpened} = styles;
+
   return (
-    <nav className={`${styles.navList} ${isOpen ? styles.navOpened : ''}`}>
+    <nav className={`${navList} ${isOpen && navOpened}`}>
       { children }
     </nav>
   )

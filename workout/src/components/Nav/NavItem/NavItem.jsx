@@ -1,7 +1,9 @@
 import styles from './NavItem.module.scss';
 
 const NavItem = ({children}) => {
-  return <a href="#" className={styles.navItem}>{children}</a>
+  const {navItem} = styles;
+
+  return <a href="#" className={navItem}>{children}</a>
 }
 
 export default NavItem

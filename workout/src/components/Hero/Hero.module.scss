@@ -8,7 +8,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: var(--white-color);
     font-weight: 600;
     font-size: 4rem;
     line-height: 0.85;
@@ -40,10 +40,10 @@
   display: inline-flex;
   align-items: center;
   padding: 0.3125rem 0.9375rem;
-  background: rgba(255,255,255,0.1);
+  background: var(--primary-color-100);
   font-size: 0.75rem;
   border-radius: 100rem;
-  color: #fff;
+  color: var(--white-color);
   font-weight: normal;
   margin-bottom: 2rem;
   
@@ -55,7 +55,7 @@
 
 .badge {
   border-radius: 100rem;
-  background: #25AB75;
+  background: var(--acent-color);
   text-transform: uppercase;
   padding: 0.25rem 0.625rem;
   font-weight: 600;
@@ -99,10 +99,10 @@
 
 .label {
   border-radius: 1.25rem;
-  background: rgba(255,255,255,0.1);
-  color: #fff;
+  background: var(--primary-color-100);
+  color: var(--white-color);
   padding: 1rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   flex: 1;
   @include media('tablet') {
     flex: 0;
@@ -119,9 +119,9 @@
 }
 
 .markYellow {
-  color: #FFE642;
+  color: var(--acent-color-100);
 }
 
 .markRed {
-  color: #FB1351;
+  color: var(--acent-color-200);
 }

@@ -1,7 +1,9 @@
 import styles from './PostList.module.scss';
 
 const PostList = ({ children }) => {
-  return <ul className={styles.postList}>{ children }</ul>
+  const {postList} = styles;
+
+  return <ul className={postList}>{ children }</ul>
 }
 
 export default PostList

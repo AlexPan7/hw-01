@@ -20,7 +20,7 @@
   &::after,
   span {
     content: '';
-    background: #fff;
+    background: var(--white-color);
     position: absolute;
     height: 0.125rem;
     width: 80%;

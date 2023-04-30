@@ -1,25 +1,22 @@
-import React, { useState } from 'react';
 import styles from './PostItem.module.scss';
-import data from './data.json';
 
-const PostItem = () => {
-  const [posts] = useState(data);
-
+const PostItem = ({post}) => {
+  const {postItem, postImage, postDescr, badge, postTitle} = styles;
+  const {image, time, title, descr} = post;
+  
   return (
-    posts.map(({image, time, title, descr}, i) => {
-      return <li key={i} className={styles.postItem}>
-        <a href="#">
-          <div className={styles.image}>
-            <img src={image} alt="image description" />
-          </div>
-          <div className={styles.descr}>
-            <span className={styles.badge}>{time}</span>
-            <h3 className={styles.title}>{title}</h3>
-            <p>{descr}</p>
-          </div>
-        </a>
-      </li>
-    })
+    <li className={postItem}>
+      <a href="#">
+        <div className={postImage}>
+          <img src={image} alt="image description" />
+        </div>
+        <div className={postDescr}>
+          <span className={badge}>{time}</span>
+          <h3 className={postTitle}>{title}</h3>
+          <p>{descr}</p>
+        </div>
+      </a>
+    </li>
   )
 }
 

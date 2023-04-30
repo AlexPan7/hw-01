@@ -1,13 +1,15 @@
-import styles from './Cta.module.scss';
+import styles from './CTA.module.scss';
 import Button from '../Button/Button';
 
-const Cta = () => {
+const CTA = () => {
+  const {cta, title} = styles;
+
   return (
-    <div className={styles.cta}>
-      <h3 className={styles.title}>Try us in one click</h3>
+    <div className={cta}>
+      <h3 className={title}>Try us in one click</h3>
       <Button>Free Lesson</Button>
     </div>
   )
 }
 
-export default Cta
+export default CTA

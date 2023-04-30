@@ -1,7 +1,9 @@
 import styles from './SectionTitle.module.scss';
 
 const SectionTitle = ({children}) => {
-  return <h2 className={styles.title}>{children}</h2>
+  const {title} = styles;
+  
+  return <h2 className={title}>{children}</h2>
 }
 
 export default SectionTitle

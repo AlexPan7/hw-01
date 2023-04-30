@@ -1,3 +1,4 @@
+@import 'vars';
 @import 'mixin';
 
 *,
@@ -8,18 +9,12 @@
 
 body {
   margin: 0;
-  background: #000;
-  color: rgba(255,255,255,0.67);
-  font: 1rem/1.8125 'Poppins', Arial, Helvetica, sans-serif;
+  background: var(--black-color);
+  color: var(--primary-color);
+  font: var(--text-base)/1.8125 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 #root {
   overflow: hidden;
   min-height: 100vh;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 77rem;
-  padding: 0 1rem;
 }

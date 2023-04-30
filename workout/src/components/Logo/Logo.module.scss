@@ -1,10 +1,10 @@
 .logo {
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
 
   &:hover {
-    color: #FFE642;
+    color: var(--acent-color-100);
   }
 }

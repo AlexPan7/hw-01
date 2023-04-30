@@ -9,7 +9,7 @@
   }
 }
 
-.image {
+.postImage {
   border-radius: 0.625rem;
   position: relative;
   overflow: hidden;
@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 2;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #000000 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, var(--black-color)000 100%);
   }
   
   img {
@@ -29,20 +29,20 @@
   }
 }
 
-.descr {
+.postDescr {
   margin-top: -2rem;
   position: relative;
   z-index: 2;
   padding: 0 1.25rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
 
   p {
     margin: 0;
   }
 }
 
-.title {
-  color: #fff;
+.postTitle {
+  color: var(--white-color);
   font-size: 2rem;
   line-height: 0.9;
   margin: 0 0 1rem;
@@ -53,12 +53,12 @@
 
 .badge {
   float: right;
-  border-radius: 10px 0 0 0;
-  background: #000;
-  font-size: 1.25rem;
+  border-radius: 0.625rem 0 0 0;
+  background: var(--black-color);
+  font-size: var(--text-lead);
   line-height: 1;
-  padding: 10px 0 0 10px;
+  padding: 0.625rem 0 0 0.625rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--white-color);
   margin: 0 -1.25rem 0 0.2rem;
 }
